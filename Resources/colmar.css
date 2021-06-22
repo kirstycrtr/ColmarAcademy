@@ -1,0 +1,212 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  color: rgb(77, 77, 77);
+  }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px 24px;
+  align-items: center;
+}
+
+.logo {
+  display:inline-flex;
+  height: 32px;
+  align-items: center;
+}
+
+.mainmenu {
+  display: inline-flex;
+  height: 16px;
+}
+
+ul {
+  display: inline-flex;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 3 px;
+  display: inline-flex;
+  margin-left: 16px;
+
+}
+
+.logopara {
+  font-size: 16px;
+  
+}
+
+span {
+  font-weight: bold;
+}
+
+/* learn section */
+
+.learn {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 32px 24px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 35px;
+}
+
+.learnimage {
+  display: inline-flex;
+  width: 60%;
+  height: auto;
+ 
+}
+
+.cta {
+  display: inline-flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 24px;
+  padding-right: 150px;
+
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: rgb(77, 77, 77);
+  border: none;
+  color: white;
+  padding: 16px 150px;
+  text-decoration: none;
+  margin: 20px 0px;
+  cursor: pointer;
+  width: 100%;
+}
+  /* practising section*/
+
+.practising {
+  background-color: white;
+  display: flex;    
+  flex-direction: row;
+  align-items: center;
+  margin: 32px 24px;
+
+  }
+
+.practisingimage {
+  display: inline-flex;
+  flex-direction: column;
+  width: 60%;
+  
+}
+
+.image {
+  
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.quote {
+  font-size: 10px;
+  margin-bottom: 32px;
+}
+
+.aboutcolmar {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  margin-left: 16px;
+
+}
+
+.orientation {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 16px;
+
+}
+
+.campus {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 16px;
+
+}
+
+.guest {
+  display: inline-flex;
+  flex-direction: row;
+  background-color: lightgray;
+  padding: 16px;
+
+}
+
+.imgaboutcolmar {
+  width: 35%;
+  height: auto;
+  padding: 10px;
+
+}
+
+.aboutcolmardesc {
+  display: inline-flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+
+}
+
+.read-more {
+  margin-top: 8px;
+  width:200px;
+  color: blue;
+  background-color: transparent;
+  border: none;
+  text-align: start;
+
+}
+
+/* Courses section */
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: lightgray;
+  padding: 32px 72px;
+
+}
+
+.h1courses {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+h2 {
+
+}
+
+.coursedesc {
+  
+}
+
+.engineering {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: lightgray;
+  padding: 16px;
+
+}
