@@ -4,9 +4,17 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   color: rgb(77, 77, 77);
+  letter-spacing: .50px;
+  
   }
 
-.header {
+  p {
+    color: gray;
+    line-height: 27px;
+  }
+  /* HEADER*/
+
+.header, .headermob {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,6 +22,10 @@
   align-items: center;
 }
 
+.headermob {
+  display: none;
+  
+}
 .logo {
   display:inline-flex;
   height: 32px;
@@ -37,16 +49,19 @@ li {
 
 }
 
-.logopara {
-  font-size: 16px;
-  
+.logo > img {height: 32px;}
+
+/*
+.logomenu {
+  display: none;
 }
+*/
 
 span {
   font-weight: bold;
 }
 
-/* learn section */
+/* LEARN section */
 
 .learn {
   background-color: lightgray;
@@ -59,6 +74,10 @@ span {
 h1 {
   font-size: 40px;
   margin-bottom: 20px;
+}
+
+.cta h2 {
+  padding-left: 0px;
 }
 
 h2 {
@@ -78,8 +97,8 @@ h2 {
   display: inline-flex;
   flex-direction: column;
   width: 40%;
-  margin-left: 24px;
-  padding-right: 150px;
+  margin-left: 50px;
+  
 
 }
 
@@ -91,7 +110,7 @@ input[type=button], input[type=submit], input[type=reset] {
   text-decoration: none;
   margin: 20px 0px;
   cursor: pointer;
-  width: 100%;
+  width: 330px;
 }
   /* practising section*/
 
@@ -99,7 +118,7 @@ input[type=button], input[type=submit], input[type=reset] {
   background-color: white;
   display: flex;    
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   margin: 32px 24px;
 
   }
@@ -112,7 +131,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .image {
-  
+  width: 100%;
   height: auto;
   margin-bottom: 32px;
 }
@@ -132,10 +151,14 @@ input[type=button], input[type=submit], input[type=reset] {
 
 }
 
+.aboutcolmar p {
+  padding-left: 16px;
+}
+
 .orientation {
   display: inline-flex;
   flex-direction: row;
-  padding: 16px;
+  padding: 0px 16px 16px;
 
 }
 
@@ -146,18 +169,18 @@ input[type=button], input[type=submit], input[type=reset] {
 
 }
 
-.guest {
+.our-guest-lecture {
+  background-color: lightgray;
   display: inline-flex;
   flex-direction: row;
-  background-color: lightgray;
   padding: 16px;
-
 }
+
 
 .imgaboutcolmar {
   width: 35%;
   height: auto;
-  padding: 10px;
+  padding: 0px 10px 10px;
 
 }
 
@@ -184,48 +207,249 @@ input[type=button], input[type=submit], input[type=reset] {
 .courses {
   background-color: lightgray;
   padding-top: 32px;
-  
-
 }
 
 .h1courses {
-  padding-bottom: 32px;
+  margin-bottom: 0px;
+  padding-top: 24px;
   text-align: center;
+  background-color: lightgray;
+
 }
 
 .coursedesc {
   display: flex;
   flex-flow: row wrap;
-  padding-bottom: 24px;
-  margin-bottom: 32px;
-  margin-left: 72px;
-  margin-right: 72px;
-
+  margin: 32px 72px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  
 }
+
 .coursedetails {
   display: inline-flex;
   flex-direction: column;
-  margin-right: 32px;
   width: 33%;
+  padding: 16px;
   background-color: white;
-  margin-bottom: 32px;
-
-}
-
-h2 {
-  margin-top: 16px;
-  margin-left: 16px;
+  min-height: 400px;
+  background-clip: content-box;
   
 
 }
 
+h2 {
+  padding-top: 16px;
+  padding-left: 16px;
+  
+}
+
 .coursedetails p {
   padding-left: 16px;
-  color: gray;
-  margin-bottom: 24px;
+  padding-right: 25px;
+  margin-bottom: 8px;
 }
 
 .coursedetails h2 {
   padding-left: 16px;
   margin-left: 0px;
+  line-height: 45px;
+  color: orange;
+  font-weight: bold;
+
 }
+
+
+/* 4th section - video */
+
+
+.h1exhibit {
+  text-align: center;
+}
+
+.thesisexhibit {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 32px 24px;
+  }
+
+.thesisvideo {
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 60%;
+  height: auto;
+  margin-left: 16px;
+
+}
+
+.thesisvideo p {
+  padding-left: 16px;
+  padding-right: 25px;
+  color: gray;
+  margin-bottom: 8px;
+  line-height: 27px;
+}
+
+.thesisvideo h2 {
+  padding-left: 16px;
+  margin-left: 0px;
+  line-height: 45px;
+  color: orange;
+  font-weight: bold;
+
+}
+
+/* 2nd half section "theisexhibit" - fisma */
+
+.fismaresearch {
+  width: 40%;
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 27px;
+  margin-left: 24px;
+  justify-content: flex-start;
+  
+}
+
+.fisma {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0px 16px 16px;
+ 
+}
+
+.imgaboutfisma {
+  width: 35%;
+  
+}
+
+.fismaresearchdesc {
+  display: inline-flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  
+}
+
+.fismaresearchdesc p, button {
+  padding: 16px;
+}
+
+.nowandthen {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 16px;
+  
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px 24px;
+  align-items: center;
+}
+  
+.copyright {
+  display: inline-flex;
+
+}
+  
+  .terms {
+    display: inline-flex;
+    height: 16px;
+  }
+  
+  ul {
+    display: inline-flex;
+    flex-direction: row;
+  }
+  
+  li {
+    list-style-type: none;
+    padding-left: 3 px;
+    display: inline-flex;
+    /*margin-left: 16px;*/
+  
+  }
+
+/* MEDIA QUERIES */
+
+/* header for tablet and mobile 
+
+@media screen and (max-width: )
+*/
+
+/* Header for big screen */
+
+
+@media screen and (max-width: 700px) {
+  
+  /*header*/
+  .headermob {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .header {display:none;}
+
+  /* first section - learn */
+  .learn {
+    flex-direction: column;
+    margin: 0px;
+
+  }
+
+  .learn > img {
+    width: 100%;
+  }
+
+  .cta {
+    margin-left: 16px;
+    align-content: flex-start;
+    width: 100%;
+  }
+
+  .practising {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .practisingimage {
+    display: none;
+  }
+
+  .aboutcolmar {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .orientation > img {
+    width: 100%;
+  }
+
+  .orientation, .campus, .our-guest-lecture {
+    flex-direction: column;
+  }
+  }
+  
+/* second section practising */
+
+
+
+
+/*
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: 
+  [class*="col-"] {
+    width: 100%;
+  }
+*/
