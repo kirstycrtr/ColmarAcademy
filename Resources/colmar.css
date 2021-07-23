@@ -5,6 +5,7 @@
   box-sizing: border-box;
   color: rgb(77, 77, 77);
   letter-spacing: .50px;
+  overflow-x: hidden;
   
   }
 
@@ -14,7 +15,7 @@
   }
   /* HEADER*/
 
-.header, .headermob {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,9 +24,14 @@
 }
 
 .headermob {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px 24px;
+  align-items: center;
   display: none;
-  
 }
+
 .logo {
   display:inline-flex;
   height: 32px;
@@ -381,17 +387,10 @@ h2 {
 
 /* MEDIA QUERIES */
 
-/* header for tablet and mobile 
-
-@media screen and (max-width: )
-*/
-
-/* Header for big screen */
-
+/* header for tablet and mobile  */
 
 @media screen and (max-width: 700px) {
-  
-  /*header*/
+
   .headermob {
     display: inline-flex;
     justify-content: space-between;
@@ -399,7 +398,9 @@ h2 {
     margin-bottom: 24px;
   }
 
-  .header {display:none;}
+  .logo, .mainmenu {
+    display: none;
+  }
 
   /* first section - learn */
   .learn {
@@ -412,12 +413,19 @@ h2 {
     width: 100%;
   }
 
+  .cta > h1, .cta > h2, .cta > form {
+    padding: 16px;
+  }
+
   .cta {
     margin-left: 16px;
     align-content: flex-start;
     width: 100%;
   }
 
+  /* 2nd section - practising MEDIA QUERIES */
+  @media screen and (max-width: 700px) {
+    
   .practising {
     flex-direction: column;
     margin: 0px;
@@ -430,22 +438,96 @@ h2 {
   .aboutcolmar {
     flex-direction: column;
     margin: 0px;
+    width: 100%;
+  
   }
 
   .orientation > img {
     width: 100%;
   }
 
+  .campus > img, .aboutcolmardesc {
+      width: 100%;
+    }
+
+  .our-guest-lecture > img {
+      width: 100%;
+    }
+  }
   .orientation, .campus, .our-guest-lecture {
     flex-direction: column;
+    background-color: transparent;
+    padding: 0px;
+    
   }
-  }
+}
   
-/* second section practising */
+  
+/* second section practising MEDIA QUERIES*/
 
+/* third section courses MEDIA QUERIES*/
 
+@media screen and (max-width: 700px) {
+  .h1courses, .courses {
+    background-color: transparent;
+  }
 
+  .courses {
+    margin: 32px;
+  }
+  .coursedesc {
+    flex-direction: column;
+    margin: 0px;
+  }
 
+  .coursedetails {
+    width: 100%;
+    min-height: auto;
+    margin: 0px;
+    align-content: flex-start;
+    background-color: lightgray;
+    background-clip: padding-box;
+    margin-bottom: 8px;
+  } 
+
+  .coursedetails > img, .coursedetails > p {
+    display: none;
+  }
+
+  .coursedetails > h2 {
+    color: gray;
+    padding: 0px;
+  }
+}
+
+  /* section 3 THESIS EXHIBIT MEDIA QUERIES*/
+
+  .fismaresearch, .thesisvideo > h2 + p {
+    display: none;
+  }
+
+  .thesisvideo > h2 {
+    display: none;
+  }
+  .thesisexhibit {
+    margin: 0%;
+  }
+  .thesisvideo {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+
+  }
+  .video {
+    margin: 0px;
+    padding: 0px;
+  }
+
+/* FOOTER MEDIA QUERIES*/
+
+.footer {
+  justify-content: flex-start;
+}
 /*
 @media only screen and (max-width: 768px) {
   /* For mobile phones: 
